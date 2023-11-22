@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1vw;
+    padding-top: 1vh;
+    background-color:rgb(9, 50, 29) ;
+    color: white;
+}
+
+.links a{
+    margin-left: 1vw;
+    color: white;
+}
+
+.banner{
+    z-index: 0;
+    height: 20vh;
+    width: 90vw;
+    background-color: rgba(0,0,0,0.41);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    top: 40vh;
+    left:5vw;
+    text-align: center;
+}
+
+.footer{
+    background-color: rgba(5, 88, 63, 0.41);
+    position: fixed; 
+    bottom: 0; 
+    width: 99.9%; 
+    height: 9.2vh;
+    ;
+}
+
+@media screen and (max-width: 600px){
+    nav{
+        position: relative;
+    }
+    .pagetitle{
+        background-color: rgb(99, 159, 110);
+        padding:1vw;
+        color:black;
+    }
+    .links{
+        display: none;
+        position: absolute;
+        min-width: 100px;
+    }
+
+    .links a{
+        color: black;
+        padding: 12px 16px;
+        display: block;
+        box-shadow: 0px 8px 16px 0px rgba(24, 61, 17, 0.99);
+        z-index: 1;
+        background-color: rgb(174, 182, 153);
+    }
+
+    .links a:hover{background-color: white;}
+     nav:hover .links{display:block;}
+     nav:hover .pagetitle{background-color: rgb(147, 236, 208);}
+
+}
+
+video{
+    width:100vw;
+    height:100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.icons{
+    position: relative;
+    top:67vh;
+}
+#facebook {
+    background-image: url('../images/sprite.jpg');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-position: -226px -129px;
+    display: inline-block;
+}
+
+#github {
+    background-image: url('../images/sprite.jpg');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-position: -456px -129px;
+    display: inline-block;
+}
+
+#twitter {
+    background-image: url('../images/sprite.jpg');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-position: -340px -129px;
+    display: inline-block;
+}
+
+#message {
+    background-image: url('../images/sprite.jpg');
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    background-position: -55px -129px;
+    display: inline-block;
+}
